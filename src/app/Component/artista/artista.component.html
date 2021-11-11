@@ -1,0 +1,24 @@
+<div class="container">
+  
+  <h1 class="title">Artistas encontrados</h1>
+
+  <section *ngIf="artistas">
+    <div class="row">
+      <div class="col" *ngFor="let item of artistas[0]">
+        <div class="card" >
+          <a [href]="item.external_urls.spotify">
+            <div class="card__perfil">
+              <div class="card__nombre">
+                  <img [src]="item.images[1].url" width="200px" alt="">
+                  <h2>{{ item.name}}</h2>
+              </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+</div>

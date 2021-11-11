@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #19191d;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    background-color: rgb(23, 23, 24);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.logo{
+    background-color: rgb(23, 23, 24);
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+    background-color: rgb(23, 23, 24);
+    margin-left: 80px;
+}
+
+.box_search{
+    padding: 10px;
+    padding-right: 100px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: rgba(57, 49, 49, 1);
+    border-style: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.title{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/*container*/
+
+.container{
+    width: 90%;
+    padding-right: 0.75rem;
+    padding-left:  0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*cards*/
+.descripcion{
+    text-align: center;
+    padding: 5px 25px;
+    color: rgb(237, 242, 243);
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card__perfil{
+    width: 310px;
+    padding: 20px;
+    /* box-shadow: 1px 1px 5px rgb(201, 201, 201); */
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;
+}
+.card__perfil:hover{
+    border: solid rgb(3, 133, 255) 2px;
+}
+.card__perfil:hover img{
+    transform: rotate(0);
+}
+
+.card__nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/*filas*/
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.col {
+    flex: 1 0 0%;
+  }

@@ -1,0 +1,22 @@
+
+<div class="container">
+  <h1 class="title">New Releases</h1>
+  <section *ngIf="newRelease">
+      <div class="row">
+        <div class="col" *ngFor="let item of newRelease.albums.items">
+          <div class="card">
+            <a [href]="item.external_urls.spotify">
+              <div class="card__perfil">
+                <div class="card__nombre">
+                    <img [src]="item.images[1].url" width="100px" alt="">
+                    <h2>{{ item.artists[0].name }}</h2>
+                    <p class="descripcion"> {{ item.name }} </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    </div>
+  </section>
+</div>
+
